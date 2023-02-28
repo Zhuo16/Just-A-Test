@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Exercise</title>
+	<style type="text/css">
+		header{
+			color: white;
+			font-family: serif;
+			font-size: 60px;
+			text-shadow: 5px 6px 7px grey;
+			text-align: center;
+			transition: color 2s;
+		}
+		.header:hover{
+			color: skyblue;
+		}
+		.Div{
+			display: flex;
+			justify-content: center;
+			justify-items: center;
+			flex-direction: row;
+			padding:10px; margin :120px auto;
+			padding-bottom: 10px;
+		    text-align: center;
+			transition: 2s;
+ 			box-shadow:  3px 9px 15px 15px #282A3A;
+ 			background-color: #301E67;
+ 			border-radius: 20px;
+		}
+		.box img{
+			display: block;
+			width: 200px;
+			height: 200px;
+	        border-radius: 20px;
+		}
+		.box{
+			margin: 10px;
+			background-color: #51557E;
+			border: 2px solid black;
+			border-radius: 20px;
+			box-shadow:3px 9px 15px 15px #16213E;
+			text-shadow: 8px 6px 4px  black;
+			color: white;
+		}
+		.box:hover{
+			transform: scale(1.3);
+			z-index: 2;
+			background-color: lightsalmon;
+			color: white;
+		}
+		@media only screen and (max-width:799px){
+			.Div{
+				flex-direction: column;
+			}
+		.box{
+			display: block;
+			margin: auto;
+		}
+			}
+
+	</style>
+</head>
+<body style="background-color: #03001C;" >
+	<div>
+		<header class="header">
+			Light Of The Dark
+		</header>
+	</div>
+	<div class="Div">
+    	<div class="box">
+ 			<img src="A.jpg" alt="img">Image I
+ 		</div>
+ 		<div class="box">
+ 			<img src="B.jpg" alt="img">Image II
+ 		</div>
+ 		<div class="box">
+ 			<img src="C.jpg" alt="img">Image III
+ 		</div>
+ 		<div class="box">
+ 			<img src="D.jpg" alt="img">Image IV
+ 		</div>
+ 		<div class="box">
+ 			<img src="E.jpg" alt="img">Image V
+    	</div>
+	</div>
+</body>
+</html>
